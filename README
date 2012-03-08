@@ -1,1 +1,21 @@
-Test README
+The leading developers of blenderRepRap-addon are currently borisov-r and zubenelacribi, 
+though anyone is more than wellcome to contribute to this project.
+
+This is our attempt of integration RepRap into Blender 2.6. Firmware used for RerRap is Sprinter and Tonokip for communication.
+
+This work is licensed under the GNU GPL v3 or (at the user's discretion) any later version.
+
+It is based on Tonokips's firmware, which was licensed under GPL v2 or later.
+
+==============================================
+
+Main goals of the project:
+1. Simple control and communcation with RepRap printer from Blender's interface.
+2. Button for generation of GCode of selected object(s). For the generation of the code we intend to use Slic3r (http://slic3r.org/).
+3. Import GCode in blender for visualization of the path.
+4. Add possibility to change the path, speed and save the changes.
+5. Print the generated GCode directly from Blender.
+
+==============================================
+
+Let's see where it will end :)
