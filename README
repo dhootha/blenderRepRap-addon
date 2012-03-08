@@ -1,5 +1,4 @@
-The leading developers of blenderRepRap-addon are currently borisov-r and zubenelacribi, 
-though anyone is more than wellcome to contribute to this project.
+The leading developers of blenderRepRap-addon are currently borisov-r and zubenelacribi, though anyone is more than wellcome to contribute to this project.
 
 This is our attempt of integration RepRap into Blender 2.6. Firmware used for RerRap is Sprinter and Tonokip for communication.
 
