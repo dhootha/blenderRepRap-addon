@@ -4,8 +4,6 @@ This is our attempt of integration RepRap into Blender 2.6. Firmware used for Re
 
 This work is licensed under the GNU GPL v3 or (at the user's discretion) any later version.
 
-It is based on Tonokips's firmware, which was licensed under GPL v2 or later.
-
 ==============================================
 
 Main goals of the project:
