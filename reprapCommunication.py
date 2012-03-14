@@ -182,7 +182,10 @@ else:
 
 if ("none" not in port):
     if printer.isOpen():
-        printer.close()
-else: pass
+       printer.close()
+       print("Now port is open: ")
+       print(printer.isOpen())
+else: 
+    pass
 
 print("That\'s all folks.")
