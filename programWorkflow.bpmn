@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:BpmnDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bpmn="http://stp.eclipse.org/bpmn" xmi:id="_DPb1AW9VEeGc-etjFqVJuQ" iD="_DPb1AG9VEeGc-etjFqVJuQ">
+  <pools xmi:type="bpmn:Pool" xmi:id="_DQtnYW9VEeGc-etjFqVJuQ" iD="_DQtnYG9VEeGc-etjFqVJuQ" name="blender">
+    <artifacts xmi:type="bpmn:TextAnnotation" xmi:id="_KnPJAW9VEeGc-etjFqVJuQ" iD="_KnPJAG9VEeGc-etjFqVJuQ" name="pyserial should placed in: blenderRepRap-addon/pyserial/dist-packages/"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DROkwW9VEeGc-etjFqVJuQ" iD="_DROkwG9VEeGc-etjFqVJuQ" outgoingEdges="_zRBloW9WEeGc-etjFqVJuQ" name="pyserial" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_bqPXAW9VEeGc-etjFqVJuQ" iD="_bqPXAG9VEeGc-etjFqVJuQ" outgoingEdges="_10SMkW9WEeGc-etjFqVJuQ" incomingEdges="_zRBloW9WEeGc-etjFqVJuQ" name="validateSerialPorts.py"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_mIjTgW9WEeGc-etjFqVJuQ" iD="_mIjTgG9WEeGc-etjFqVJuQ" incomingEdges="_10SMkW9WEeGc-etjFqVJuQ" name="reprapPrinter.py"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_IsFZAW9XEeGc-etjFqVJuQ" iD="_IsFZAG9XEeGc-etjFqVJuQ" name="connect"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_UcJtw29XEeGc-etjFqVJuQ" iD="_UcJGsW9XEeGc-etjFqVJuQ" name="disconnect"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_XWWOCG9XEeGc-etjFqVJuQ" iD="_XWWOAG9XEeGc-etjFqVJuQ" name="move"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_iUhLxm9XEeGc-etjFqVJuQ" iD="_iUf9oW9XEeGc-etjFqVJuQ" name="checkExtruderTemp"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_pWFxEG9XEeGc-etjFqVJuQ" iD="_pWFKAW9XEeGc-etjFqVJuQ" name="checkTableTemp"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_ucFaiG9XEeGc-etjFqVJuQ" iD="_ucFagG9XEeGc-etjFqVJuQ" name="sendGCodeFile"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_zRBloW9WEeGc-etjFqVJuQ" iD="_zRBloG9WEeGc-etjFqVJuQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_10SMkW9WEeGc-etjFqVJuQ" iD="_10SMkG9WEeGc-etjFqVJuQ"/>
+  </pools>
+</bpmn:BpmnDiagram>
