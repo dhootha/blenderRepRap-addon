@@ -1,7 +1,7 @@
 import sys
 # we should consider adding pyserial into blender path and make tests !
 pyserialPath = "/usr/local/lib/python3.2/dist-packages/"    # path to installed pySerial for python 3.2py
-debug = False   # allow print in functions to be printed in console
+debug = True   # allow print in functions to be printed in console
 
 def checkPathInBlender():
     """ checks if PySerial already defined in sys.path()
@@ -55,8 +55,8 @@ def testPortsForRepRap():
     
     try:    
         for portName[num-1] in portName:
-            printer = Serial(portName[num-1], 115200, timeout = 10)
-         
+            printer = Serial(portName[num-1], 115200, timeout = 30)
+            
             answer = printer.readline().strip()
             printer.close()
             #print(answer.decode('ascii'))
@@ -161,14 +161,14 @@ baud = 115200
 print("Found RepRap on port: ")
 print(port)
 
-if ("ACM" in port):
+if ("USB" in port):
     printer = Serial(port, baud, timeout = 5)
     print(printer.readline().strip().decode('ascii')) #without these readout nothing moves ??? strange but true
     word = 'G91\r\n'
     printer.write(word.encode('ascii'))
     
     if word is not "none":
-        word = move('X', '-', 10, 400)
+        word = move('X', '+', 100, 400)
         print(word)
         try:
             printer.write(word)
